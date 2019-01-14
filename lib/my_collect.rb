@@ -1,5 +1,6 @@
 def my_collect(array)
-  my_collect(array) do |lang|
-  lang.upcase
-end end
+	array.each do |number|
+		number * 2	
+	end
+
 end
