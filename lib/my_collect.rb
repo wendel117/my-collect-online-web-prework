@@ -1,9 +1,11 @@
-def my_collect(array)
-  i = 0
-  array = []
+def my_collect(languages)
+	i = 0
+	arr = []
+
 	languages.each do |language|
-		language.upcase
-
+		block_value = yield language if block_given?
+		arr << block_value
 	end
-
+	arr
 end
+
