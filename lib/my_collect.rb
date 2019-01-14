@@ -3,7 +3,7 @@ def my_collect(languages)
 	array = []
 	languages.each do |language|
 		yield(languages)
-		array << block_value
+		i+= i+1
 	end
 	array
 end
