@@ -5,4 +5,5 @@ def my_collect(array)
 		language.upcase
     i+= i+1
 	end
+  array
 end
