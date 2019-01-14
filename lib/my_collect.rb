@@ -5,3 +5,4 @@ def my_collect(collection)
   lang.upcase
   i += i + 1
 end
+end
