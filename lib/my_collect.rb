@@ -1,9 +1,10 @@
 def my_collect(languages)
 	i = 0
-	array = []
+	arr = []
+
 	languages.each do |language|
-		yield(languages)
-		i+= i+1
+		block_value = yield language if block_given?
+		arr << block_value
 	end
-	array
+	arr
 end
