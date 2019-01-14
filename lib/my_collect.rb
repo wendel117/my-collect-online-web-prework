@@ -2,7 +2,7 @@ def my_collect(languages)
 	i = 0
 	array = []
 	languages.each do |language|
-		block_value = yield language if block_given?
+		yield(language)
 		array << block_value
 	end
 	array
